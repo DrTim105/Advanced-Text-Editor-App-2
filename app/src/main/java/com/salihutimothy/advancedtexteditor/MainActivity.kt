@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
         if (useOption1) {
             // mEditText.fromHtml(html);
         } else {
-            arEditor.fromHtml(html)
+//            arEditor.fromHtml(html)
         }
     }
 
@@ -131,6 +131,7 @@ class MainActivity : AppCompatActivity() {
         val underline: IARE_ToolItem = ARE_ToolItem_Underline()
         val strikethrough: IARE_ToolItem = ARE_ToolItem_Strikethrough()
         val quote: IARE_ToolItem = ARE_ToolItem_Quote()
+        val fontColor : IARE_ToolItem = ARE_ToolItem_FontColor()
         val listNumber: IARE_ToolItem = ARE_ToolItem_ListNumber()
         val listBullet: IARE_ToolItem = ARE_ToolItem_ListBullet()
         val hr: IARE_ToolItem = ARE_ToolItem_Hr()
@@ -148,6 +149,7 @@ class MainActivity : AppCompatActivity() {
         mToolbar.addToolbarItem(underline)
         mToolbar.addToolbarItem(strikethrough)
         mToolbar.addToolbarItem(quote)
+        mToolbar.addToolbarItem(fontColor)
         mToolbar.addToolbarItem(listNumber)
         mToolbar.addToolbarItem(listBullet)
         mToolbar.addToolbarItem(hr)
@@ -159,7 +161,7 @@ class MainActivity : AppCompatActivity() {
         mToolbar.addToolbarItem(right)
         mToolbar.addToolbarItem(image)
         mToolbar.addToolbarItem(video)
-        mToolbar.addToolbarItem(at)
+//        mToolbar.addToolbarItem(at)
         mEditText = findViewById(R.id.yView)
         mEditText.setToolbar(mToolbar)
         initToolbarArrow()
